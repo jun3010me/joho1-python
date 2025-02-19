@@ -1,10 +1,16 @@
 #kadai11
-#ユークリッドの互除法
-dai = int(input("大きな数を入れてちょ"))
-sho = int(input("小さな数を入れてちょ"))
+#うるう年判定
+seireki = int(input())
+uruu = 0
 
-while dai % sho != 0:
-    amari = dai % sho
-    dai = sho
-    sho = amari
-print(sho)
+if seireki % 4 == 0:
+    uruu = 1
+    if seireki % 100 == 0:
+        uruu = 0
+        if seireki % 400 == 0:
+            uruu = 1
+
+if uruu == 1:
+    print("Uruu doshi!")
+else:
+    print("Not Uruu doshi!")

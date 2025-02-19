@@ -1,10 +1,10 @@
 #kadai13
-#2進数から10進数に変換
-nishin = int(input("Please input 2shinsu =>"))
+#10進数から2進数に変換
+jushin = int(input("Please input 10shinsu =>"))
 keta = 1
-jushin = 0
-while nishin > 0:
-    jushin += nishin%10*keta
-    nishin//=10
-    keta*=2
-print(jushin)
+nishin = 0
+while jushin > 0:
+    nishin += jushin%2*keta
+    jushin//=2
+    keta*=10
+print(nishin)

@@ -1,8 +1,8 @@
 #kadai8
-#数値を入力し、逐次探索を行う
+#1から入力した数値までの、偶数の総和を求める
 n = int(input())
-list = [11,24,36,42,58,63,77]
-for i in range(7):
-	if list[i] == 36:
-		print("Hakken!")
-		break
+goukei = 0
+for n in range(n+1):
+    if n % 2 == 0:
+        goukei += n
+print(goukei)

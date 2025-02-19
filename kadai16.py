@@ -1,10 +1,10 @@
 #kadai16
-#選択ソート
+#バブルソート
 l = [24,17,16,18]
 for i in range(len(l)-1):
-    for j in range(i,(len(l)-1)):
-        if l[i] > l[j]:
-            temp = l[i]
-            l[i] = l[j]
-            l[j] = temp
+    for j in range((len(l)-1)-i):
+        if l[j] > l[j+1]:
+            temp = l[j]
+            l[j] = l[j+1]
+            l[j+1] = temp
 print(l)

@@ -1,17 +1,10 @@
 #kadai17
-#2から入力した数までの素数をリストアップする
-max = int(input())
-kazu = []
-count = 0
-for i in range(max):
-    kazu.append(i + 1)
-for i in range(2,max):
-    for j in range(2,max):
-        try:
-            kazu.remove(i*j)
-            count+=1
-        except ValueError:
-            pass
-kazu.remove(1)
-print(kazu)
-print(count)
+#選択ソート
+l = [24,17,16,18]
+for i in range(len(l)-1):
+    for j in range(i,(len(l)-1)):
+        if l[i] > l[j]:
+            temp = l[i]
+            l[i] = l[j]
+            l[j] = temp
+print(l)

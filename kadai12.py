@@ -1,10 +1,10 @@
 #kadai12
-#10進数から2進数に変換
-jushin = int(input("Please input 10shinsu =>"))
-keta = 1
-nishin = 0
-while jushin > 0:
-    nishin += jushin%2*keta
-    jushin//=2
-    keta*=10
-print(nishin)
+#ユークリッドの互除法
+dai = int(input("大きな数を入れてちょ"))
+sho = int(input("小さな数を入れてちょ"))
+
+while dai % sho != 0:
+    amari = dai % sho
+    dai = sho
+    sho = amari
+print(sho)

@@ -1,7 +1,4 @@
 #kadai6
-#1から入力した数値までの総和を求める
-n = int(input())
-goukei = 0
-for n in range(n+1):
-    goukei += n
-print(goukei)
+list = [2,3,5,7,11,13,17]
+for i in range(7):
+    print(list[i])

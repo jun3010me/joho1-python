@@ -1,3 +1,4 @@
-list = [2,3,5,7,11,13,17]
-for i in range(7):
-    print(list[i])
+#kadai5
+#10から100まで10ずつ足しながら表示する
+for i in range(10,101,10):
+    print(i)
